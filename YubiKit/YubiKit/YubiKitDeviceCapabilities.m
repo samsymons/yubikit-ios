@@ -97,11 +97,7 @@
     }
 #endif
 
-    // Simulator and USB-C type devices
-    if (self.currentUIDevice.ykf_deviceModel == YKFDeviceModelSimulator ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro3 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadPro4 ||
-        self.currentUIDevice.ykf_deviceModel == YKFDeviceModelIPadAir4) {
+    if (self.currentUIDevice.ykf_deviceModel == YKFDeviceModelSimulator) {
         return NO;
     }
     if (@available(iOS 10, *)) {
